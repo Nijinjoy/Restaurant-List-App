@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import ListGroup from 'react-bootstrap/ListGroup';
 import Operation from "./Operation";
+import Review from "./Review";
 
 
 function Viewrest() {
@@ -48,7 +49,7 @@ function Viewrest() {
                 <ListGroup.Item variant="info">Neighborhood::{viewrest.neighborhood}</ListGroup.Item>
               </ListGroup>
               <><Operation op={viewrest.operating_hours}  /></>
-              <>reviews</>
+              <><Review review={viewrest.reviews}/></>
             </Col>
 
           </Row>
